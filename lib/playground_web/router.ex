@@ -17,7 +17,7 @@ defmodule PlaygroundWeb.Router do
   scope "/", PlaygroundWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    live "/", PlaygroundLive, :index
   end
 
   # Other scopes may use custom stacks.
